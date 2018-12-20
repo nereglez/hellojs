@@ -24,4 +24,6 @@ myfunction()
 mySimpleFunction()
 
 const calc = calculator(10)
-calc.next()
+calc.next() // returns 5 because yield stops function and done false
+calc.next(7) // returns 14 because 7 * 2 and stops functio in yiend(doubleThat)
+calc.next(100) // returns 10 * 14 * 100 and done true
